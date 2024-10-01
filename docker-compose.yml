@@ -8,7 +8,7 @@ services:
     extends:
       file: docker-compose.base.yml
       service: db
-    image: ${DB_IMAGE_NAME:-cydeacode/cydeasoar_db}:v1
+    image: ${DB_IMAGE_NAME:-ghcr.io/dfir-iris/iriswebapp_db}:${DB_IMAGE_TAG:-v2.4.14}
 
   app:
     extends:
