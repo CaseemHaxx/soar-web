@@ -1,0 +1,7 @@
+docker cp case_ioc.html iriswebapp_app:/iriswebapp/app/blueprints/case/templates;
+
+docker cp case_ioc_routes.py iriswebapp_app:/iriswebapp/app/blueprints/case/;
+
+docker cp case.ioc.js iriswebapp_app:/iriswebapp/app/static/assets/js/iris/case.ioc.js
+
+docker restart iriswebapp_app;
